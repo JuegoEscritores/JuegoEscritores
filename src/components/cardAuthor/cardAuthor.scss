@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  margin-top: 7.5em;
+  margin-left: 3em;
+  margin-right: 15em;
+  width: 100px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20em;
+  height: 20em;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  font-family: 'Kranky', cursive;
+  width: 12em;
+  top: 10.8em;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(67, 56, 24, .95);
+  z-index: 1;
+  transition: top .5s ease;
+  border-radius: 20px;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}

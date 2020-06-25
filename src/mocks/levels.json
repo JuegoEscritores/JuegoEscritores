@@ -1,0 +1,62 @@
+[
+  {
+    "level": "1",
+    "type": "zip",
+    "resource": "COMPRENSIONLECTORA1.zip",
+    "info": ""
+  },
+  {
+    "level": "2",
+    "type": "educaplay",
+    "resource": "https://es.educaplay.com/recursos-educativos/5837210-comprension_lectora_3.html",
+    "info": ""
+  },
+  {
+    "level": "3",
+    "type": "html",
+    "resource": "../../resources/INTERPRETATIVO.htm",
+    "info": "Avatares de la vida (Fragmento II).pdf"
+  },
+  {
+    "level": "4",
+    "type": "html",
+    "resource":  "../../resources/ASOCIACION902.htm",
+    "info": ""
+  },
+  {
+    "level": "5",
+    "type": "zip",
+    "resource": "TALLER 2 LECTURA.zip",
+    "info": ""
+  },
+  {
+    "level": "6",
+    "type": "zip",
+    "resource": "COMPETENCIASLECTORAS.zip",
+    "info": ""
+  },
+  {
+    "level": "7",
+    "type": "html",
+    "resource": "../../resources/huecos902.htm",
+    "info": ""
+  },
+  {
+    "level": "8",
+    "type": "educaplay",
+    "resource": "https://es.educaplay.com/recursos-educativos/5825376-comprension_lectora_2.html",
+    "info": ""
+  },
+  {
+    "level": "9",
+    "type": "educaplay",
+    "resource": "https://es.educaplay.com/recursos-educativos/5798453-comprension_lectora.html",
+    "info": ""
+  },
+  {
+    "level": "10",
+    "type": "zip",
+    "resource": "CIERRE.zip",
+    "info": ""
+  }
+]

@@ -1,0 +1,45 @@
+.footer-container {
+  width: 120em;
+  height: 15%;
+  bottom: 0;
+  margin: 0;
+  position: fixed;
+  display: inline-flex;
+  background-image: url('/../../resources/footerTable.png');
+  background-size: auto;
+  background-position: 9% 0%;
+  background-repeat: no-repeat;
+  img {
+    width: 4%;
+    height: auto;
+    padding-top: 0.2%;
+    padding-left: 5%;
+  }
+
+  .order {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    padding-left: 5em;
+  }
+  .text {
+    padding-top: 2em;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    text-transform: uppercase;
+    color: khaki;
+  }
+  .inline-xd {
+    height: 100px;
+    padding-left: 2em;
+    padding-right: 3em;
+  }
+  .custom-order {
+  }
+
+  .custom {
+    display: block !important;
+  }
+}
