@@ -210,7 +210,7 @@ class Game {
                     let fileDownloader = new FileDownloader();
                     switch (levelJson.type) {
                         case Keys.TYPE_ZIP:
-                            //fileDownloader.downloadFile(levelJson.resource);
+                            fileDownloader.downloadFile(levelJson.resource);
                             console.log("Es un ZIp");
                             break;
                         case Keys.TYPE_EDUCAPLAY:
