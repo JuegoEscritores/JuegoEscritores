@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Keys} from "./keys";
 
 ReactDOM.render(
     <React.StrictMode>
-        <audio src="/../../music.mp3" id="music" autoPlay={true} loop={true} controls={true}></audio>
+        <audio src={Keys.ENV+"music.mp3"} id="music" autoPlay loop controls></audio>
         <App/>
     </React.StrictMode>,
     document.getElementById('root')

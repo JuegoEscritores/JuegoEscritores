@@ -22,6 +22,7 @@ export const LoginPage = (props: any) => {
      * @param e event
      */
     const handleEnter = (e: any) => {
+        console.log(navigator.permissions);
         if ((user != null)) { //There is a user created
             if (user.icon !== "") {
                 history.push(Keys.PAGE_TABLE_GAME);
