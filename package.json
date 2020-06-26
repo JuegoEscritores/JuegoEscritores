@@ -1,5 +1,4 @@
 {
-  "homepage": "https://JuegoEscritores.github.io/JuegoEscritores", 
   "name": "JuegoEscritores",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +23,7 @@
     "mkdirp": "^1.0.4",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",

@@ -28,6 +28,7 @@ export const InputScore = (props: any) => {
                     user.currentLevel = lvl;
                     storageService.set(Keys.USER, user);
                     storageService.set(Keys.IS_CHANGE_INPUT, true);
+                    SendEmail({user: user, level: lvl});
                 } else {
                     setTimeout(() => {
                         alert('No se pudo enviar el mensaje por un fallo en conexión de internet.\nSi el problema persiste comunícalo.');
@@ -45,7 +46,8 @@ export const InputScore = (props: any) => {
         <div className="container-all">
             <form>
                 <div id="id-input" className="inputGroup inputGroup2">
-                    <label>¿Cuál fue tu puntaje en el nivel: {lvl}?</label>
+                    <label>Por favor realiza el juego de este nivel y luego dinos:</label>
+                    <label>¿Cuál fue tu puntaje para el nivel {lvl}?</label>
                     <input type="number" id="nombre_usuario" className="password"
                            onChange={(e) => {
                                setInputScore(e.target.valueAsNumber);
