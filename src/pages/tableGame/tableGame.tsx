@@ -26,7 +26,7 @@ export const TableGame = (props: any) => {
                 setTimeout(() => {
                     alert('No has elegido un autor, por favor elige uno.');
                 }, 1000);
-                console.log("No se ha elegido autor");
+                console.log("No se ha elegido autor, por favor elige uno.");
                 history.push(Keys.PAGE_CREATE_USER);
             }
         } else {
@@ -64,8 +64,9 @@ export const TableGame = (props: any) => {
                 changeSpawn(row, column);
             } else if (storageService.get(Keys.IS_CHANGE_INPUT) !== null) {
                 setTimeout(() => {
-                    alert('No ingresó puntaje para el nivel.')
+                    alert('No has ingresado puntaje para el nivel al que habís entrado.')
                 }, 1000);
+                storageService.destroy(Keys.IS_CHANGE_INPUT);
             }
             let mapTable = storageService.get(Keys.MAP);
             let z = new Game(character, viewBox, mapTable, allowance, space, columns, rows,
@@ -110,7 +111,7 @@ const changeSpawn = (r: number, c: number) => {
     mapLS.saveMap(r, c, 'S');
     mapLS.saveMap(beforeSpawn.i, beforeSpawn.j, ' ');
     mapLS.saveNewSpawn(r, c);
-    storageService.set(Keys.IS_CHANGE_INPUT, false);
+    storageService.destroy(Keys.IS_CHANGE_INPUT);
 }
 
 class Game {
@@ -220,7 +221,8 @@ class Game {
                             break;
                         case Keys.TYPE_HTML:
                             if (levelJson.info) {
-                                fileDownloader.downloadFile(levelJson.info);
+                                //fileDownloader.downloadFile(levelJson.info);
+                                window.open(levelJson.info);
                             }
                             window.open(levelJson.resource, '_blank', "shilpijain", false);
                             window.focus();
