@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/JuegoEscritores/static/css/main.e5840193.chunk.css",
+    "main.css": "/JuegoEscritores/static/css/main.1630f974.chunk.css",
     "main.js": "/JuegoEscritores/static/js/main.cb0d3f61.chunk.js",
     "main.js.map": "/JuegoEscritores/static/js/main.cb0d3f61.chunk.js.map",
     "runtime-main.js": "/JuegoEscritores/static/js/runtime-main.6c58ffba.js",
@@ -8,15 +8,15 @@
     "static/js/2.1ffcf48c.chunk.js": "/JuegoEscritores/static/js/2.1ffcf48c.chunk.js",
     "static/js/2.1ffcf48c.chunk.js.map": "/JuegoEscritores/static/js/2.1ffcf48c.chunk.js.map",
     "index.html": "/JuegoEscritores/index.html",
-    "precache-manifest.6d6e0b22bed8db363d28634b854b35fe.js": "/JuegoEscritores/precache-manifest.6d6e0b22bed8db363d28634b854b35fe.js",
+    "precache-manifest.54ee2bee3a3b574b3f140c376a74737a.js": "/JuegoEscritores/precache-manifest.54ee2bee3a3b574b3f140c376a74737a.js",
     "service-worker.js": "/JuegoEscritores/service-worker.js",
-    "static/css/main.e5840193.chunk.css.map": "/JuegoEscritores/static/css/main.e5840193.chunk.css.map",
+    "static/css/main.1630f974.chunk.css.map": "/JuegoEscritores/static/css/main.1630f974.chunk.css.map",
     "static/js/2.1ffcf48c.chunk.js.LICENSE.txt": "/JuegoEscritores/static/js/2.1ffcf48c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6c58ffba.js",
     "static/js/2.1ffcf48c.chunk.js",
-    "static/css/main.e5840193.chunk.css",
+    "static/css/main.1630f974.chunk.css",
     "static/js/main.cb0d3f61.chunk.js"
   ]
 }
