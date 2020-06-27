@@ -1,3 +1,5 @@
+$env: "/JuegoEscritores/";
+//$env:"/../../";
 .footer-container {
   width: 120em;
   height: 15%;
@@ -5,7 +7,7 @@
   margin: 0;
   position: fixed;
   display: flex;
-  background-image: url('/../../resources/footerTable.png');
+  background-image: url($env + 'resources/footerTable.png');
   background-size: auto;
   background-position: 9% 0%;
   background-repeat: no-repeat;

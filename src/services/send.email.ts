@@ -7,13 +7,21 @@ export const SendEmail = (props: any) => {
     user = props.user;
     let num = props.level;
     let lvlScore = user.score[num - 1];
-    let info: any = {userName: user.name, level: lvlScore.level, scoreLevel: lvlScore.score};
+    const total = () => {
+        let totalNum = 0;
+        user.score.forEach((element: any) => {
+            totalNum += element.score;
+        })
+        return totalNum
+    };
+    let totalScore = "Puntaje total: " + total();
+    let info: any = {userName: user.name, level: lvlScore.level, scoreLevel: lvlScore.score, totalScore: totalScore};
     const getScores = (json: any) => {
         user.score.forEach((element) => {
             json["score" + element.level] = "Nivel " + element.level + ": " + element.score;
         })
         return json;
-    }
+    };
     info = getScores(info);
     emailjs.send("gmail", "template_cJPH7HCg", info, 'user_fpNDLPWJm8a7JTZCHRRAU')
         .then((result) => {

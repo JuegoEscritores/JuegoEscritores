@@ -1,7 +1,7 @@
 export class Keys {
     //General
-    //static ENV:string = "/JuegoEscritores/"
-    static ENV:string = "/"
+    static ENV:string = "/JuegoEscritores/"
+    //static ENV:string = "/"
     static USER: string = "__userJson";
     static MAP: string = "__map";
     static SPAWN: string = "__spawn";

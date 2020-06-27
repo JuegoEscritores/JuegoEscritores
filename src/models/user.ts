@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
 
 export const Score = {
-    level: 1,
+    level: 0,
     score: 0
 }
 
@@ -10,5 +10,5 @@ export const User = {
     name:"",
     score: [Score],
     icon: '',
-    currentLevel: 1
+    currentLevel: 0
 };
