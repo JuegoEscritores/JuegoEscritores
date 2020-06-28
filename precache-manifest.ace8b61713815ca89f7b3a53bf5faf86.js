@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16a863ef903b4a88e016f86e588d3a39",
+    "revision": "7b6096b372443058ea1338924297e841",
     "url": "/JuegoEscritores/index.html"
   },
   {
-    "revision": "fe5def15543a74473d52",
+    "revision": "46e2c52483ca2c3d7401",
     "url": "/JuegoEscritores/static/css/main.ccaca7d8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/JuegoEscritores/static/js/2.1b9e460b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe5def15543a74473d52",
-    "url": "/JuegoEscritores/static/js/main.ec225fe7.chunk.js"
+    "revision": "46e2c52483ca2c3d7401",
+    "url": "/JuegoEscritores/static/js/main.c9be14ce.chunk.js"
   },
   {
     "revision": "fcd54b2ada66e891c3a9",
