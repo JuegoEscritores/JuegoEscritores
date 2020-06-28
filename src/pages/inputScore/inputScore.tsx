@@ -28,7 +28,7 @@ export const InputScore = (props: any) => {
                     user.currentLevel = lvl;
                     storageService.set(Keys.USER, user);
                     storageService.set(Keys.IS_CHANGE_INPUT, true);
-                    SendEmail({user: user, level: lvl});
+                    //SendEmail({user: user, level: lvl});
                 } else {
                     setTimeout(() => {
                         alert('No se pudo enviar el mensaje por un fallo en conexión de internet.\nSi el problema persiste comunícalo.');

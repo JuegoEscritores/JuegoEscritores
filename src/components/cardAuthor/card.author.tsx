@@ -19,6 +19,8 @@ export const CardAuthor = (props: any) => {
                 user.icon = props.author;
                 storageService.set(Keys.USER, user);
                 history.push(Keys.PAGE_TABLE_GAME);
+                window.open(Keys.ENV+"resources/Juego escritores - Instrucciones.pdf");
+                window.open("","_blank","width=300,height=200,menubar=no", false);
             } else {
                 console.log("No se ha elegido un autor")
                 history.push(Keys.PAGE_LOGIN);
@@ -27,7 +29,7 @@ export const CardAuthor = (props: any) => {
     }
     return <>
         <div className="container" onClick={(e) => handle(e)}>
-            <img src={props.author.icon} alt={props.author.name}/>
+            <img src={props.author.image} alt={props.author.name}/>
             <p className="title">{props.author.name}</p>
             <div className="overlay"></div>
         </div>

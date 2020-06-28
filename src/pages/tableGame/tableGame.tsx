@@ -8,6 +8,7 @@ import {BoardMap} from "./map";
 import level from '../../mocks/levels.json';
 import {FooterComponent} from "../../components/footer/footer.component";
 import {User} from "../../models/user";
+import {SendEmail} from "../../services/send.email";
 
 const storageService = new StorageService();
 const rows = 10;
@@ -174,18 +175,18 @@ class Game {
     gameWin(row: number, column: number) {
         if (this.won === false) {
             this.won = true;
-
+            let total = 0;
+            let user = User;
+            user = storageService.get(Keys.USER);
+            user.score.forEach((element: any) => {
+                total += element.score;
+            })
+            SendEmail({user:user});
             setTimeout(() => {
-                let total = 0;
-                let user = User;
-                user = storageService.get(Keys.USER);
-                user.score.forEach((element: any) => {
-                    total += element.score;
-                })
                 changeSpawn(row, column);
                 storageService.set(Keys.IS_CHANGE_INPUT, true);
                 window.location.reload();
-                alert('!Felicidades!\nHaz logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
+                alert('!Felicidades!\nHas logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
             }, 1000);
         }
     }

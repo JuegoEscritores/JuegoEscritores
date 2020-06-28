@@ -5,8 +5,8 @@ import {User} from "../models/user";
 export const SendEmail = (props: any) => {
     let user = User;
     user = props.user;
-    let num = props.level;
-    let lvlScore = user.score[num - 1];
+    //let num = props.level;
+    //let lvlScore = user.score[num - 1];
     const total = () => {
         let totalNum = 0;
         user.score.forEach((element: any) => {
@@ -15,7 +15,8 @@ export const SendEmail = (props: any) => {
         return totalNum
     };
     let totalScore = "Puntaje total: " + total();
-    let info: any = {userName: user.name, level: lvlScore.level, scoreLevel: lvlScore.score, totalScore: totalScore};
+    //let info: any = {userName: user.name, level: lvlScore.level, scoreLevel: lvlScore.score, totalScore: totalScore};
+    let info: any = {userName: user.name, totalScore: totalScore};
     const getScores = (json: any) => {
         user.score.forEach((element) => {
             json["score" + element.level] = "Nivel " + element.level + ": " + element.score;

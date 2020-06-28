@@ -11,7 +11,7 @@ $env: "/JuegoEscritores/";
 $white: #ffffff;
 $grey: #8f8f8f;
 $black: #271C01;
-$background-image: url($env + "resources/background_game/background-game.jpg");
+$background-image: url($env + "resources/background_game/background-game.gif");
 $ground-1: #a0522d;
 $ground-2: #cd853F;
 $lawn: #228b22;
@@ -192,77 +192,77 @@ $classes: (
         'lvl': (
                 'bg': (
                         //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl.png")
+                        url($env + "resources/background_game/lvl.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-1': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl1.png")
+                        url($env + "resources/background_game/lvl1.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-2': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl2.png")
+                        url($env + "resources/background_game/lvl2.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-3': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl3.png")
+                        url($env + "resources/background_game/lvl3.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-4': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl4.png")
+                        url($env + "resources/background_game/lvl4.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-5': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl5.png")
+                        url($env + "resources/background_game/lvl5.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-6': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl6.png")
+                        url($env + "resources/background_game/lvl6.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-7': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl7.png")
+                        url($env + "resources/background_game/lvl7.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-8': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl8.png")
+                        url($env + "resources/background_game/lvl8.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-9': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl9.png")
+                        url($env + "resources/background_game/lvl9.gif")
                 ),
                 'bg-type': image
         ),
         'lvl-10': (
                 'bg': (
                   //url(https://e7.pngegg.com/pngimages/703/359/png-clipart-pile-of-books-illustration-school-library-reading-librarian-stacked-books-angle-white-thumbnail.png)
-                        url($env + "resources/background_game/lvl10.png")
+                        url($env + "resources/background_game/lvl10.gif")
                 ),
                 'bg-type': image
         )
