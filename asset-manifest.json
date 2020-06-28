@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/JuegoEscritores/static/css/main.fd422123.chunk.css",
-    "main.js": "/JuegoEscritores/static/js/main.1f1d2b92.chunk.js",
-    "main.js.map": "/JuegoEscritores/static/js/main.1f1d2b92.chunk.js.map",
+    "main.css": "/JuegoEscritores/static/css/main.ccaca7d8.chunk.css",
+    "main.js": "/JuegoEscritores/static/js/main.ec225fe7.chunk.js",
+    "main.js.map": "/JuegoEscritores/static/js/main.ec225fe7.chunk.js.map",
     "runtime-main.js": "/JuegoEscritores/static/js/runtime-main.6c58ffba.js",
     "runtime-main.js.map": "/JuegoEscritores/static/js/runtime-main.6c58ffba.js.map",
-    "static/js/2.87ff9712.chunk.js": "/JuegoEscritores/static/js/2.87ff9712.chunk.js",
-    "static/js/2.87ff9712.chunk.js.map": "/JuegoEscritores/static/js/2.87ff9712.chunk.js.map",
+    "static/js/2.1b9e460b.chunk.js": "/JuegoEscritores/static/js/2.1b9e460b.chunk.js",
+    "static/js/2.1b9e460b.chunk.js.map": "/JuegoEscritores/static/js/2.1b9e460b.chunk.js.map",
     "index.html": "/JuegoEscritores/index.html",
-    "precache-manifest.10a4e9cec84faa70ed8fab85ea2f2d56.js": "/JuegoEscritores/precache-manifest.10a4e9cec84faa70ed8fab85ea2f2d56.js",
+    "precache-manifest.c6a736b520ad6d57b42ec792fd1ddee0.js": "/JuegoEscritores/precache-manifest.c6a736b520ad6d57b42ec792fd1ddee0.js",
     "service-worker.js": "/JuegoEscritores/service-worker.js",
-    "static/css/main.fd422123.chunk.css.map": "/JuegoEscritores/static/css/main.fd422123.chunk.css.map",
-    "static/js/2.87ff9712.chunk.js.LICENSE.txt": "/JuegoEscritores/static/js/2.87ff9712.chunk.js.LICENSE.txt"
+    "static/css/main.ccaca7d8.chunk.css.map": "/JuegoEscritores/static/css/main.ccaca7d8.chunk.css.map",
+    "static/js/2.1b9e460b.chunk.js.LICENSE.txt": "/JuegoEscritores/static/js/2.1b9e460b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6c58ffba.js",
-    "static/js/2.87ff9712.chunk.js",
-    "static/css/main.fd422123.chunk.css",
-    "static/js/main.1f1d2b92.chunk.js"
+    "static/js/2.1b9e460b.chunk.js",
+    "static/css/main.ccaca7d8.chunk.css",
+    "static/js/main.ec225fe7.chunk.js"
   ]
 }
