@@ -65,7 +65,7 @@ export const TableGame = (props: any) => {
                 changeSpawn(row, column);
             } else if (storageService.get(Keys.IS_CHANGE_INPUT) !== null) {
                 setTimeout(() => {
-                    alert('No has ingresado puntaje para el nivel al que habís entrado.')
+                    alert('No has ingresado puntaje para el nivel al que habías entrado.')
                 }, 1000);
                 storageService.destroy(Keys.IS_CHANGE_INPUT);
             }
@@ -181,7 +181,10 @@ class Game {
             user.score.forEach((element: any) => {
                 total += element.score;
             })
-            SendEmail({user:user});
+            if (!storageService.get(Keys.SEND_EMAIL)) {
+                SendEmail({user: user});
+                storageService.set(Keys.SEND_EMAIL, true);
+            }
             setTimeout(() => {
                 changeSpawn(row, column);
                 storageService.set(Keys.IS_CHANGE_INPUT, true);
@@ -216,7 +219,7 @@ class Game {
                             console.log("Es un ZIp");
                             break;
                         case Keys.TYPE_EDUCAPLAY:
-                            window.open(levelJson.resource, '_blank', "shilpijain", false);
+                            window.open(levelJson.resource, '_blank', "width=500,height=500,menubar=no", false);
                             window.focus();
                             console.log("Es una página externa")
                             break;
@@ -225,7 +228,7 @@ class Game {
                                 //fileDownloader.downloadFile(levelJson.info);
                                 window.open(levelJson.info);
                             }
-                            window.open(levelJson.resource, '_blank', "shilpijain", false);
+                            window.open(levelJson.resource, '_blank', "width=500,height=500,menubar=no", false);
                             window.focus();
                             break;
                         default:

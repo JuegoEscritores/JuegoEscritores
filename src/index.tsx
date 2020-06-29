@@ -9,7 +9,7 @@ import 'react-app-polyfill/stable';
 
 ReactDOM.render(
     <React.StrictMode>
-        <audio src={Keys.ENV+"music.mp3"} id="music" autoPlay loop controls></audio>
+        <audio src={Keys.ENV + "music.mp3"} id="music" autoPlay loop controls></audio>
         <App/>
     </React.StrictMode>,
     document.getElementById('root')

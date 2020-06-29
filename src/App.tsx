@@ -12,13 +12,13 @@ import {Keys} from "./keys";
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/JuegoEscritores/">
                 <Switch>
                     <Route exact path={Keys.PAGE_INPUT_SCORE} component={InputScore}/>
                     <Route exact path={Keys.PAGE_LOGIN} component={LoginPage}/>
                     <Route exact path={Keys.PAGE_CREATE_USER} component={CreateUserPage}/>
                     <Route exact path={Keys.PAGE_TABLE_GAME} component={TableGame}/>
-                    <Route component={PageNotFound}/>
+                    <Route path={Keys.ENV} component={PageNotFound}/>
                 </Switch>
             </BrowserRouter>
         </>
