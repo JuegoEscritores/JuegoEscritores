@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e750272cd988240d6cc41ec68d187e22",
+    "revision": "75d3b9903db33ba9d97c5a9c6e6e2b96",
     "url": "/JuegoEscritores/index.html"
   },
   {
