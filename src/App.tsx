@@ -18,7 +18,7 @@ function App() {
                     <Route exact path={Keys.PAGE_LOGIN} component={LoginPage}/>
                     <Route exact path={Keys.PAGE_CREATE_USER} component={CreateUserPage}/>
                     <Route exact path={Keys.PAGE_TABLE_GAME} component={TableGame}/>
-                    <Route path={Keys.ENV} component={PageNotFound}/>
+                    <Route component={PageNotFound}/>
                 </Switch>
             </BrowserRouter>
         </>

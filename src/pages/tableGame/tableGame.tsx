@@ -182,15 +182,24 @@ class Game {
                 total += element.score;
             })
             if (!storageService.get(Keys.SEND_EMAIL)) {
-                SendEmail({user: user});
-                storageService.set(Keys.SEND_EMAIL, true);
+                SendEmail({user: user}, (function (send: boolean) {
+                    console.log(send);
+                    if (send) {
+                        storageService.set(Keys.SEND_EMAIL, true);
+                        setTimeout(() => {
+                            changeSpawn(row, column);
+                            storageService.set(Keys.IS_CHANGE_INPUT, true);
+                            window.location.reload();
+                            alert('¡Felicidades!\nHas logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
+                        }, 10);
+                    } else {
+                        setTimeout(() => {
+                            alert('No se pudo enviar el correo final con tu puntaje, revisa tu conexión y vuelve a tocar el diamante.')
+                        })
+                    }
+                }));
+
             }
-            setTimeout(() => {
-                changeSpawn(row, column);
-                storageService.set(Keys.IS_CHANGE_INPUT, true);
-                window.location.reload();
-                alert('!Felicidades!\nHas logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
-            }, 1000);
         }
     }
 
@@ -200,7 +209,14 @@ class Game {
      * @param row
      * @param column
      */
-    inLevel(levelName: any, row: number, column: number) {
+    inLevel(levelName
+                :
+                any, row
+                :
+                number, column
+                :
+                number
+    ) {
         if (this.dead === false) {
             //this.character.classList.add('dead');
             //this.dead = true;
@@ -254,7 +270,10 @@ class Game {
      * find and return the level in the levels json.
      * @param levelName
      */
-    selectorLevel(levelName: string) {
+    selectorLevel(levelName
+                      :
+                      string
+    ) {
         let levels = level;
         let lvlJson: any;
         levels.forEach((lvl) => {
@@ -269,7 +288,10 @@ class Game {
         this.position.x += 38;
     }
 
-    collidable(o: string) {
+    collidable(o
+                   :
+                   string
+    ) {
         if (o === '*' || o === '#' || o === 'H') {
             return true;
         } else {
@@ -277,7 +299,12 @@ class Game {
         }
     }
 
-    collision(c: number, d: string) {
+    collision(c
+                  :
+                  number, d
+                  :
+                  string
+    ) {
         let x = this.position.x;
         let y = this.position.y;
         let m = this.map;
@@ -345,7 +372,12 @@ class Game {
         return 0;
     }
 
-    moveCharacter(d: number, e: string) {
+    moveCharacter(d
+                      :
+                      number, e
+                      :
+                      string
+    ) {
         let a = this.allowance;
         let w = this.width;
         let o: any;
@@ -403,7 +435,10 @@ class Game {
         c.style.left = this.position.x + 'px';
     }
 
-    animateCharacter(mode: string) {
+    animateCharacter(mode
+                         :
+                         string
+    ) {
         let c = this.character;
 
         if (mode === 'show') {

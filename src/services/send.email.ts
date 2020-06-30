@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com';
 import {User} from "../models/user";
 
 
-export const SendEmail = (props: any) => {
+export const SendEmail = (props: any, callback: any) => {
     let user = User;
     user = props.user;
     //let num = props.level;
@@ -24,14 +24,18 @@ export const SendEmail = (props: any) => {
         return json;
     };
     info = getScores(info);
-    emailjs.send("gmail", "template_cJPH7HCg", info, 'user_fpNDLPWJm8a7JTZCHRRAU')
+    const temlateTest = "template_cJPH7HCg";
+    const temlate = "template_w1odKeGS";
+    const userIDTest = "user_fpNDLPWJm8a7JTZCHRRAU";
+    const userID = "user_qJFCqCTcLI2K2B6wvUEKr";
+    const sendEmail = emailjs.send("gmail", temlate, info, userID)
         .then((result) => {
             console.log(result.text);
-            return true;
+            callback(true)
         }, (error) => {
             console.log("error, acá hay un error");
             console.log(error.text);
+            callback(false)
         });
-    return false;
 }
 
