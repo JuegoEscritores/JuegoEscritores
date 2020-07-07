@@ -15,9 +15,7 @@ export const InputScore = (props: any) => {
     const lvl = props.location.state ? props.location.state.level : null;
     const handleButton = () => {
         if (lvl) {
-            if (inputScore && inputScore > 0) {
-                let data = {user: user, level: lvl};
-                if (true) {
+            if (inputScore && inputScore >= 0) {
                     let scores = user.score;
                     if (!scores[lvl - 1]) {
                         scores.push({"level": lvl, "score": inputScore});
@@ -26,15 +24,12 @@ export const InputScore = (props: any) => {
                         scores[lvl - 1]["score"] = inputScore;
                     }
                     user.currentLevel = lvl;
+                    console.log("LVL " + lvl);
+                    if(lvl==10){
+                        storageService.set(Keys.WIN, true);
+                    }
                     storageService.set(Keys.USER, user);
                     storageService.set(Keys.IS_CHANGE_INPUT, true);
-                    //SendEmail({user: user, level: lvl});
-                } else {
-                    setTimeout(() => {
-                        alert('No se pudo enviar el mensaje por un fallo en conexión de internet.\nSi el problema persiste comunícalo.');
-                    }, 1000);
-                    storageService.set(Keys.IS_CHANGE_INPUT, false);
-                }
             } else {
                 storageService.set(Keys.IS_CHANGE_INPUT, false);
             }

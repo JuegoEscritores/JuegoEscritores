@@ -8,6 +8,7 @@ export class Keys {
     static IS_CHANGE_INPUT: string = "__isChange";
     static AUX_SPAWN: string = "__auxSpawn";
     static SEND_EMAIL: string = "__sendEmail";
+    static WIN: string = "__win";
     //Pages
     static PAGE_LOGIN: string = "/";
     static PAGE_CREATE_USER: string = "/Crear-Usuario";

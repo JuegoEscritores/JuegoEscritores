@@ -173,32 +173,36 @@ class Game {
     }
 
     gameWin(row: number, column: number) {
+        console.log("Tocó el diamante...");
         if (this.won === false) {
-            this.won = true;
-            let total = 0;
-            let user = User;
-            user = storageService.get(Keys.USER);
-            user.score.forEach((element: any) => {
-                total += element.score;
-            })
-            if (!storageService.get(Keys.SEND_EMAIL)) {
-                SendEmail({user: user}, (function (send: boolean) {
-                    console.log(send);
-                    if (send) {
-                        storageService.set(Keys.SEND_EMAIL, true);
-                        setTimeout(() => {
-                            changeSpawn(row, column);
-                            storageService.set(Keys.IS_CHANGE_INPUT, true);
-                            window.location.reload();
-                            alert('¡Felicidades!\nHas logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
-                        }, 10);
-                    } else {
-                        setTimeout(() => {
-                            alert('No se pudo enviar el correo final con tu puntaje, revisa tu conexión y vuelve a tocar el diamante.')
-                        })
-                    }
-                }));
+            if(storageService.get(Keys.WIN)) {
+                storageService.set(Keys.WIN, false);
+                this.won = true;
+                let total = 0;
+                let user = User;
+                user = storageService.get(Keys.USER);
+                user.score.forEach((element: any) => {
+                    total += element.score;
+                })
+                if (!storageService.get(Keys.SEND_EMAIL)) {
+                    SendEmail({user: user}, (function (send: boolean) {
+                        console.log(send);
+                        if (send) {
+                            storageService.set(Keys.SEND_EMAIL, true);
+                            setTimeout(() => {
+                                changeSpawn(row, column);
+                                storageService.set(Keys.IS_CHANGE_INPUT, true);
+                                window.location.reload();
+                                alert('¡Felicidades!\nHas logrado pasar todos los niveles.\nTu puntaje final fue de ' + total);
+                            }, 10);
+                        } else {
+                            setTimeout(() => {
+                                alert('No se pudo enviar el correo final con tu puntaje, revisa tu conexión y vuelve a tocar el diamante.')
+                            })
+                        }
+                    }));
 
+                }
             }
         }
     }
